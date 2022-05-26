@@ -1,8 +1,9 @@
 pipeline {
-    stages{
-        stage('excel_read'){
-            step{
-                sh echo "reading from excel"
+    agent none 
+    stages {
+        stage('excel_read') {
+            steps {
+                echo 'read from excel'
             }
         }
     }
